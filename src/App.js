@@ -21,13 +21,14 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
+        background-color: #1c2b36;
         font-weight: 300;
         color: white;
     }
 `;
 
 const Wrapper = styled.div`
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: rgb(28,43,54);
     background: -moz-linear-gradient(180deg, rgba(28,43,54,1) 0%, rgba(66,90,128,1) 80%);
@@ -37,7 +38,7 @@ const Wrapper = styled.div`
 `;
 
 const PagesWrapper = styled.div`
-    padding: ${({ showNav }) => showNav ? '0 8vw' : '10vh 8vw 0'};
+    padding: 10vh 8vw 5vh;
 `;
 
 const App = () => {
@@ -53,7 +54,7 @@ const App = () => {
                 <Header setShowNav={showNavFunction}/>
                 {showNav && <Nav showNav={showNav} setShowNav={showNavFunction}/>}
                 <Switch>
-                    <PagesWrapper paddding={showNav}>
+                    <PagesWrapper>
                         <Route exact path='/' component={Home} />
                         <Route path='/skills' component={Skills} />
                         <Route path='/projects' component={Projects} />

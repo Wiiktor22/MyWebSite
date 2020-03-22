@@ -7,6 +7,9 @@ import ContactIcon from './../../../assets/icons/ContactIcon.png';
 import { Link } from 'react-router-dom';
 
 const NavWrapper = styled.nav`
+    position: absolute;
+    top: 10vh;
+    left: 0;
     height: 10vh;
     width: 100%;
     animation: ${({ showNav }) => showNav ? '.5s show ease-out;' : '.5s hide ease-out;'};

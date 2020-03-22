@@ -1,9 +1,10 @@
 import React from 'react';
+import Paragraph from '../elements/Paragraph';
 
 const Projects = () => {
     return ( 
         <>
-            <h1>Projekty</h1>
+            <Paragraph>Programowanie</Paragraph>
         </>
     );
 }
