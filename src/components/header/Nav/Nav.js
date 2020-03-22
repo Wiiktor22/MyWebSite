@@ -9,24 +9,16 @@ import { Link } from 'react-router-dom';
 const NavWrapper = styled.nav`
     position: absolute;
     top: 10vh;
-    left: 0;
+    left: 8vw;
     height: 10vh;
-    width: 100%;
-    animation: ${({ showNav }) => showNav ? '.5s show ease-out;' : '.5s hide ease-out;'};
-    @keyframes show {
+    width: 84%;
+    animation: .5s showNav ease-out;
+    @keyframes showNav {
         from {
             transform: translateX(100%);
         }
         to {
             transform: translateX(0);
-        }
-    }
-    @keyframes hide {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(100%);
         }
     }
 `;
@@ -37,10 +29,11 @@ const ListWrapper = styled.ul`
     justify-content: center;
     align-content: center;
     height: 100%;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0px 0px 12px 0px rgba(61,89,110,0.2);
+    box-shadow: 0px 0px 12px 0px rgba(28,43,54,0.8);
 `;
 
 const NavItem = styled.li`

@@ -6,6 +6,7 @@ import SmallHeading from '../elements/SmallHeading';
 import Button from '../elements/Button';
 import mtScreen from './../../assets/projects/MT_Screen.jpg';
 import yScreen from './../../assets/projects/YScreen.jpg';
+import PageWrapper from '../elements/PageWrapper';
 
 const text = "W poniższej sekcji znajduję się wizualizacja kilku z moich projektów. Ich pełną listę można oczywiście zobaczyć na moim profilu ";
 const ghRef = "https://github.com/Wiiktor22";
@@ -37,7 +38,7 @@ const Img = styled.img`
 
 const Projects = () => {
     return ( 
-        <>
+        <PageWrapper>
             <Heading>Projekty</Heading>
             <Paragraph>{text}<MyLink href={ghRef} target="_blank">GitHub</MyLink>.</Paragraph>
             <SmallHeading>MoneyTracker</SmallHeading>
@@ -55,7 +56,7 @@ const Projects = () => {
                 <Button href={yCode} target="_blank">Code</Button>
             </BtnWrapper>
             <Paragraph>Repozytorium mojej strony, na której obecnie się znajdujesz możesz znaleźć <MyLink href={myCode} target="_blank">tutaj</MyLink>.</Paragraph>
-        </>
+        </PageWrapper>
     );
 }
  

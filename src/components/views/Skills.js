@@ -10,6 +10,7 @@ import SASSLogo from './../../assets/technologyIcons/sass.png';
 import BootstrapLogo from './../../assets/technologyIcons/bootstrap.png';
 import npmLogo from './../../assets/technologyIcons/npm.png';
 import gitLogo from './../../assets/technologyIcons/git.png';
+import PageWrapper from '../elements/PageWrapper';
 
 const text1 = "Dzisiejszy eko-system JavaScript’u jest bardzo imponujący, ilość technologii i narzędzi, które współpracują z tym językiem jest ogromna. Zdaję sobie sprawę, iż za pewne znam mały skrawek tego świata, ale zdecydowanie muszę przyznać, że jestem jego fanem!";
 const text2 = "Uwielbiam pracować z React’em, budowanie aplikacji/stron react’owych to czysta przyjemność. Bardzo chciałbym pracować w niedalekiej przyszłości z użyciem tej technologii, dzięki niej nauczyłem się lepiej porządkować swój kod, tworzyć re-używalne komponenty, co przekłada się na lepszą organizację całego projektu.";
@@ -31,7 +32,7 @@ const ImgWrapper = styled.div`
 
 const Skills = () => {
     return ( 
-        <>
+        <PageWrapper>
             <Heading>Programowanie</Heading>
             <SmallHeading>JavaScript</SmallHeading>
             <Paragraph>{text1}</Paragraph>
@@ -54,7 +55,7 @@ const Skills = () => {
                 <ImgContainer src={npmLogo}></ImgContainer>
             </ImgWrapper>
             <Paragraph>{text5}</Paragraph>
-        </>
+        </PageWrapper>
     );
 }
     

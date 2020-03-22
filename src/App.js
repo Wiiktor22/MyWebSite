@@ -7,6 +7,7 @@ import Home from './components/views/Home';
 import Skills from './components/views/Skills';
 import Projects from './components/views/Projects';
 import Contact from './components/views/Contact';
+import Footer from './components/footer/Footer';
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -61,6 +62,7 @@ const App = () => {
                         <Route path='/contact' component={Contact} />
                     </PagesWrapper>
                 </Switch>
+                <Footer />
             </Wrapper>
         </BrowserRouter>
     );

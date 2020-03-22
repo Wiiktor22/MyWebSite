@@ -4,6 +4,7 @@ import Heading from '../elements/Heading';
 import Paragraph from '../elements/Paragraph';
 import MailIcon from './../../assets/icons/mail.png';
 import LinkedinIcon from './../../assets/icons/linkedin.png';
+import PageWrapper from '../elements/PageWrapper';
 
 const text = "Zapraszam do kontaktu ze mną – szukam pracy w Trójmieście.";
 const text2 = "Skontaktuj się ze mną poprzez:";
@@ -31,7 +32,7 @@ const ContactText = styled.h3`
 
 const Contact = () => {
     return ( 
-        <>
+        <PageWrapper>
             <Heading>Kontakt</Heading>
             <Paragraph>{text}</Paragraph>
             <Paragraph>{text2}</Paragraph>
@@ -43,7 +44,7 @@ const Contact = () => {
                 <ContactIcon src={LinkedinIcon}/>
                 <ContactText>Wiktor Szlegier</ContactText>
             </ContactItem>
-        </>
+        </PageWrapper>
     );
 }
  
