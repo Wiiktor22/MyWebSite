@@ -8,6 +8,10 @@ const BurgerWrapper = styled.div`
     align-items: flex-end;
     height: 100%;
     width: 10vw;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
 `;
 
 const Item = styled.div`

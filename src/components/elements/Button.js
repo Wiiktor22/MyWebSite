@@ -12,6 +12,9 @@ const Button = styled.a`
     color: white;
     text-align: center;
     text-decoration: none;
+    @media (min-width: 768px) {
+        margin: 20px;
+    }
 `;
 
 export default Button

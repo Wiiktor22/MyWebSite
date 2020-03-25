@@ -9,6 +9,10 @@ const LogoWrapper = styled.div`
     align-items: flex-start;
     height: 100%;
     width: 40vw;
+    @media (min-width: 1024px) {
+        height: auto;
+        width: auto;
+    }
 `;
 
 const Name = styled.h1`

@@ -21,6 +21,19 @@ const NavWrapper = styled.nav`
             transform: translateX(0);
         }
     }
+    @media (min-width: 768px) {
+        animation: none;
+        top: 0;
+        width: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media (min-width: 768px) {
+        width: 10vw;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
 `;
 
 const ListWrapper = styled.ul`
@@ -32,8 +45,15 @@ const ListWrapper = styled.ul`
     width: 100%;
     margin: 0 auto;
     border-radius: 5px;
-    box-shadow: 0px 0px 12px 0px rgba(61,89,110,0.2);
     box-shadow: 0px 0px 12px 0px rgba(28,43,54,0.8);
+    @media (min-width: 768px) {
+        box-shadow: none;
+    }
+    @media (min-width: 768px) {
+        grid-template-columns: 10vw;
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 15px 0;
+    }
 `;
 
 const NavItem = styled.li`

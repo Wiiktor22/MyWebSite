@@ -7,7 +7,6 @@ import Home from './components/views/Home';
 import Skills from './components/views/Skills';
 import Projects from './components/views/Projects';
 import Contact from './components/views/Contact';
-import Footer from './components/footer/Footer';
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -36,16 +35,40 @@ const Wrapper = styled.div`
     background: -webkit-linear-gradient(180deg, rgba(28,43,54,1) 0%, rgba(66,90,128,1) 80%);
     background: linear-gradient(180deg, rgba(28,43,54,1) 0%, rgba(66,90,128,1) 80%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c2b36",endColorstr="#425a80",GradientType=1);
+    @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: 10vw 1fr;
+    }
 `;
 
 const PagesWrapper = styled.div`
     padding: 10vh 8vw 5vh;
+    @media (min-width: 768px) {
+        padding: 5vh 8vw;
+    }
+    @media (min-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 `;
 
 const App = () => {
-    const [showNav, setShowNav] = useState(false);
+    const setInitialState = () => {
+        if (window.innerWidth > 767) {
+            return true
+        } else {
+            return false
+        }
+    }
+    const [showNav, setShowNav] = useState(setInitialState());
     const showNavFunction = () => {
-        setShowNav(!showNav);
+        if (window.innerWidth > 767) {
+            setShowNav(true)
+        } else {
+            setShowNav(!showNav)
+        }
     }
 
     return (
@@ -62,7 +85,6 @@ const App = () => {
                         <Route path='/contact' component={Contact} />
                     </PagesWrapper>
                 </Switch>
-                <Footer />
             </Wrapper>
         </BrowserRouter>
     );

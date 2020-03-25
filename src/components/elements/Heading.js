@@ -16,6 +16,13 @@ const Heading = styled.h2`
             transform: translateX(0);
         }
     }
+    @media (min-width: 768px) {
+        font-size: 3.6rem;
+        padding: 1vh 0 3vh;
+    }
+    @media (min-width: 768px) {
+        letter-spacing: 1.5px;
+    }
 `;
 
 export default Heading;

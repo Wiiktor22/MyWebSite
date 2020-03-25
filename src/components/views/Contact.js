@@ -6,7 +6,7 @@ import MailIcon from './../../assets/icons/mail.png';
 import LinkedinIcon from './../../assets/icons/linkedin.png';
 import PageWrapper from '../elements/PageWrapper';
 
-const text = "Zapraszam do kontaktu ze mną – szukam pracy w Trójmieście.";
+const text = "Aktualnie poszukuje pracy na terenie Trójmiasta, rozważę każdą propozycję. Zapraszam do kontaktu ze mną.";
 const text2 = "Skontaktuj się ze mną poprzez:";
 
 const ContactItem = styled.div`

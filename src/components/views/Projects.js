@@ -29,33 +29,55 @@ const BtnWrapper = styled.div`
     justify-content: space-evenly;
     width: 100%;
     margin: 1.5vh 0;
+    @media (min-width: 768px) {
+        justify-content: center;
+    }
+`;
+
+const ImgWrapper = styled.div`
+    display: flex;
+    justify-content: center;
 `;
 
 const Img = styled.img`
     width: 100%;
     height: 160px;
+    @media (min-width: 768px) {
+        height: 200px;
+        width: 50%;
+    }
+`;
+
+const Wrapper = styled.div`
+    width: 100%;
+    @media (min-width: 1024px) {
+        width: 40%;
+    }
 `;
 
 const Projects = () => {
     return ( 
         <PageWrapper>
-            <Heading>Projekty</Heading>
-            <Paragraph>{text}<MyLink href={ghRef} target="_blank">GitHub</MyLink>.</Paragraph>
-            <SmallHeading>MoneyTracker</SmallHeading>
-            <Paragraph>{mtDesc}</Paragraph>
-            <Img src={mtScreen}/>
-            <BtnWrapper>
-                <Button href={mtLive} target="_blank">Live</Button>
-                <Button href={mtCode} target="_blank">Code</Button>
-            </BtnWrapper>
-            <SmallHeading>Yahtzee!</SmallHeading>
-            <Paragraph>{yDesc}</Paragraph>
-            <Img src={yScreen}/>
-            <BtnWrapper>
-                <Button href={yLive} target="_blank">Live</Button>
-                <Button href={yCode} target="_blank">Code</Button>
-            </BtnWrapper>
-            <Paragraph>Repozytorium mojej strony, na której obecnie się znajdujesz możesz znaleźć <MyLink href={myCode} target="_blank">tutaj</MyLink>.</Paragraph>
+            <Wrapper>
+                <Heading>Projekty</Heading>
+                <Paragraph>{text}<MyLink href={ghRef} target="_blank">GitHub</MyLink>.</Paragraph>
+                <SmallHeading>MoneyTracker</SmallHeading>
+                <Paragraph>{mtDesc}</Paragraph>
+                <ImgWrapper><Img src={mtScreen}/></ImgWrapper>
+                <BtnWrapper>
+                    <Button href={mtLive} target="_blank">Live</Button>
+                    <Button href={mtCode} target="_blank">Code</Button>
+                </BtnWrapper>
+                <SmallHeading>Yahtzee!</SmallHeading>
+                <Paragraph>{yDesc}</Paragraph>
+                <ImgWrapper><Img src={yScreen}/></ImgWrapper>
+                <BtnWrapper>
+                    <Button href={yLive} target="_blank">Live</Button>
+                    <Button href={yCode} target="_blank">Code</Button>
+                </BtnWrapper>
+                <Paragraph>Repozytorium mojej strony, na której obecnie się znajdujesz możesz znaleźć <MyLink href={myCode} target="_blank">tutaj</MyLink>.</Paragraph>
+            </Wrapper>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolore aliquid ea, quibusdam repellendus neque ex excepturi perspiciatis ipsa eum ipsum nostrum at assumenda, saepe deserunt minima mollitia totam id.</p>
         </PageWrapper>
     );
 }
