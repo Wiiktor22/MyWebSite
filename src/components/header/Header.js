@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Logo from './Logo/Logo';
 import Burger from './Burger/Burger';
 import MainLinkedin from './../../assets/icons/BlueIN.png';
+import MainGH from './../../assets/icons/BlueGH.png';
 
 const HeaderWrapper = styled.header`
     display: flex;
@@ -31,17 +32,31 @@ const HeaderWrapper = styled.header`
     }
 `;
 
-const LinkedinRef = styled.img`
+const LinksWrapper = styled.div`
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px 0;
+`;
+
+const Ref = styled.img`
     height: 20px;
     width: 20px;
+    cursor: pointer;
 `;
 
 const Header = ({ setShowNav }) => {
+    const LinkedIn = 'https://www.linkedin.com/in/wiktor-szlegier-5881711a5/';
+    const GitHub = 'https://github.com/Wiiktor22';
     return ( 
         <HeaderWrapper>
             <Logo />
             <Burger setShowNav={setShowNav}/>
-            {window.innerWidth > 767 && <LinkedinRef src={MainLinkedin}/>}
+            {window.innerWidth > 767 && 
+                <LinksWrapper>
+                    <a href={LinkedIn} target="_blank" rel="noopener noreferrer"><Ref src={MainLinkedin} /></a>
+                    <a href={GitHub} target="_blank" rel="noopener noreferrer"><Ref src={MainGH} /></a>
+                </LinksWrapper>
+            }
         </HeaderWrapper>
     );
 }

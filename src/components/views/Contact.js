@@ -8,6 +8,7 @@ import PageWrapper from '../elements/PageWrapper';
 
 const text = "Aktualnie poszukuje pracy na terenie Trójmiasta, rozważę każdą propozycję. Zapraszam do kontaktu ze mną.";
 const text2 = "Skontaktuj się ze mną poprzez:";
+const LinkedIn = "https://www.linkedin.com/in/wiktor-szlegier-5881711a5/";
 
 const ContactItem = styled.div`
     display: flex;
@@ -54,7 +55,7 @@ const Contact = () => {
                 <ContactText>22wiktors@gmail.com</ContactText>
             </ContactItem>
             <ContactItem>
-                <ContactIcon src={LinkedinIcon}/>
+                <a href={LinkedIn} target="_blank" rel="noopener noreferrer"><ContactIcon src={LinkedinIcon}/></a>
                 <ContactText>Wiktor Szlegier</ContactText>
             </ContactItem>
             <Footer>
