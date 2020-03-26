@@ -28,11 +28,18 @@ const NavWrapper = styled.nav`
         left: 50%;
         transform: translateX(-50%);
     }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
+        position: fixed;
         width: 10vw;
         top: 50%;
         left: 0;
         transform: translateY(-50%);
+    }
+    @media (min-width: 1366px) {
+        width: 8vw;
+    }
+    @media (min-width: 1600px) {
+        width: 7vw;
     }
 `;
 
@@ -49,7 +56,7 @@ const ListWrapper = styled.ul`
     @media (min-width: 768px) {
         box-shadow: none;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         grid-template-columns: 10vw;
         grid-template-rows: repeat(4, 1fr);
         grid-gap: 15px 0;

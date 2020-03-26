@@ -5,7 +5,6 @@ const Paragraph = styled.p`
     font-weight: 300;
     padding-bottom: 1.5vh;
     @media (min-width: 768px) {
-        font-size: 1.6rem;
         padding-bottom: 2vh;
     }
 `;

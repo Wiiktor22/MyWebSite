@@ -39,6 +39,13 @@ const Wrapper = styled.div`
         display: grid;
         grid-template-columns: 10vw 1fr;
     }
+    @media (min-width: 1024px) {
+        display: block;
+        padding-left: 8vw;
+    }
+    @media (min-width: 1024px) {
+        padding-left: 7vw;
+    }
 `;
 
 const PagesWrapper = styled.div`
@@ -51,6 +58,7 @@ const PagesWrapper = styled.div`
         justify-content: center;
         align-items: center;
         width: 100%;
+        min-height: 100vh;
     }
 `;
 

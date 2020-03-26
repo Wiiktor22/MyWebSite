@@ -38,6 +38,9 @@ const Wrapper = styled.div`
     @media (min-width: 1024px) {
         width: 50%;
     }
+    @media (min-width: 1600px) {
+        overflow: hidden;
+    }
 `;
 
 const SecondDiv = styled.div`
@@ -46,8 +49,11 @@ const SecondDiv = styled.div`
         display: block;
         position: relative;
         width: 300px;
-        height: 100vh;
+        height: 90vh;
         align-self: flex-start;
+    }
+    @media (min-width: 1600px) {
+        height: 75vh;
     }
 `;
 
@@ -61,7 +67,7 @@ const PhotoWrapper = styled.div`
 const Skills = () => {
     return ( 
         <PageWrapper>
-            <FlexWrapper>
+            <FlexWrapper skills>
                 <Wrapper>
                     <Heading>Programowanie</Heading>
                     <SmallHeading>JavaScript</SmallHeading>

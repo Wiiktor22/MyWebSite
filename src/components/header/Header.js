@@ -13,12 +13,21 @@ const HeaderWrapper = styled.header`
     width: 100%;
     padding: 0 8vw;
     @media (min-width: 1024px) {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 10vw;
         height: 100vh;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         padding: 5vh 1vw;
+    }
+    @media (min-width: 1366px) {
+        width: 8vw;
+    }
+    @media (min-width: 1600px) {
+        width: 7vw;
     }
 `;
 

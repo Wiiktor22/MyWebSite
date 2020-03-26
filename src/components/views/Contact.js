@@ -30,7 +30,20 @@ const ContactText = styled.h3`
     color: #39BAE9;
 `;
 
+const Footer = styled.footer`
+    margin-top: 2vh;
+`;
+
+const FooterText = styled.p`
+    margin-bottom: .3vh;
+`;
+
+const FooterLink = styled.a`
+    color: white;
+`;
+
 const Contact = () => {
+    const date = new Date();
     return ( 
         <PageWrapper>
             <Heading>Kontakt</Heading>
@@ -44,6 +57,10 @@ const Contact = () => {
                 <ContactIcon src={LinkedinIcon}/>
                 <ContactText>Wiktor Szlegier</ContactText>
             </ContactItem>
+            <Footer>
+                <FooterText>Wiktor Szlegier © {date.getFullYear()}</FooterText>
+                <FooterText>Icons source <FooterLink href="https://icons8.com/" target="_blank">icons8</FooterLink></FooterText>
+            </Footer>
         </PageWrapper>
     );
 }

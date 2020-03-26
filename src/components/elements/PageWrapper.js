@@ -7,7 +7,7 @@ const PageWrapper = styled.div`
             transform: scale(.7);
         }
         to {
-            transform: scale3d(1);
+            transform: scale(1);
         }
     }
 `;
