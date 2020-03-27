@@ -85,14 +85,15 @@ const App = () => {
             <Wrapper>
                 <Header setShowNav={showNavFunction}/>
                 {showNav && <Nav showNav={showNav} setShowNav={showNavFunction}/>}
-                <Switch>
-                    <PagesWrapper>
+                <PagesWrapper>
+                    <Switch>
                         <Route exact path='/' component={Home} />
                         <Route path='/skills' component={Skills} />
                         <Route path='/projects' component={Projects} />
                         <Route path='/contact' component={Contact} />
-                    </PagesWrapper>
-                </Switch>
+                        <Route component={Home} />
+                    </Switch>
+                </PagesWrapper>
             </Wrapper>
         </BrowserRouter>
     );
