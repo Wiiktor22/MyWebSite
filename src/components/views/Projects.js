@@ -35,7 +35,8 @@ const Projects = () => (
     <PageWrapper>
         <Wrapper>
         <Heading>Projekty</Heading>
-        <Paragraph>{text}<MyLink href={ghRef} target="_blank">GitHub</MyLink>.</Paragraph>
+        <Paragraph>{text}<MyLink href={ghRef} target="_blank">GitHub</MyLink>.<br/>Repozytorium mojej strony, na której obecnie się znajdujesz możesz znaleźć <MyLink href={myCode} target="_blank">tutaj</MyLink>.</Paragraph>
+        <Paragraph></Paragraph>
         <FlexWrapper projects>
             <SingleProject 
                 head="MoneyTracker"
@@ -52,7 +53,6 @@ const Projects = () => (
                 code={yCode}
             />
         </FlexWrapper>
-        <Paragraph>Repozytorium mojej strony, na której obecnie się znajdujesz możesz znaleźć <MyLink href={myCode} target="_blank">tutaj</MyLink>.</Paragraph>
         </Wrapper>
     </PageWrapper>
 )

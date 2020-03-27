@@ -5,11 +5,14 @@ import Paragraph from '../elements/Paragraph';
 import Button from '../elements/Button';
 
 const Wrapper = styled.div`
-    @media( min-width: 1024px) {
+    @media(min-width: 1024px) {
         display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+    }
+    @media (min-width: 1366px) {
+        padding-right: 20px;
     }
 `;
 
