@@ -7,6 +7,7 @@ const FlexWrapper = styled.div`
         display: flex;
         justify-content: space-evenly;
         align-items: ${({projects}) => projects ? 'stretch' : 'center'};
+        justify-content: ${({skills}) => skills ? 'flex-start' : 'center'};
     }
     @media (min-width: 1600px) {
         align-items: ${({skills}) => skills ? 'flex-start' : 'center'};

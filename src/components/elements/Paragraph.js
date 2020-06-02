@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Paragraph = styled.p`
     font-size: 1.5rem;
@@ -7,6 +7,12 @@ const Paragraph = styled.p`
     @media (min-width: 768px) {
         padding-bottom: 2vh;
     }
+
+    ${({ project }) => (
+        project && css`
+            grid-column: 1 / -1;
+        `
+    )}
 `;
 
 export default Paragraph;

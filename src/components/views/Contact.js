@@ -6,8 +6,8 @@ import MailIcon from './../../assets/icons/mail.png';
 import LinkedinIcon from './../../assets/icons/linkedin.png';
 import PageWrapper from '../elements/PageWrapper';
 
-const text = "Aktualnie poszukuje pracy na terenie Trójmiasta, rozważę każdą propozycję. Zapraszam do kontaktu ze mną.";
-const text2 = "Skontaktuj się ze mną poprzez:";
+const text = "Aktualnie szukam pracy na terenie Trójmiasta, chętnie zmierzę się z nowymi wyzwaniami programistycznymi. Jestem osobą ambitną, której zależy na poszerzeniu swojej wiedzy.";
+const text2 = "Zapraszam do kontaktu ze mną poprzez:";
 const LinkedIn = "https://www.linkedin.com/in/wiktor-szlegier-5881711a5/";
 
 const ContactItem = styled.div`
@@ -51,7 +51,7 @@ const Contact = () => {
             <Paragraph>{text}</Paragraph>
             <Paragraph>{text2}</Paragraph>
             <ContactItem>
-                <ContactIcon src={MailIcon}/>
+                <a href={"mailto:22wiktors@gmail.com"}><ContactIcon src={MailIcon}/></a>
                 <ContactText>22wiktors@gmail.com</ContactText>
             </ContactItem>
             <ContactItem>

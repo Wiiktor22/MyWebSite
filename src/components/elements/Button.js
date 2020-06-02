@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Button = styled.a`
     width: 100px;
-    padding: 10px 0;
+    padding: 7px 0;
     border: none;
     border-radius: 5px;
     background-color: #39BAE9;
@@ -12,8 +12,14 @@ const Button = styled.a`
     color: white;
     text-align: center;
     text-decoration: none;
+    transition: .3s linear;
+    margin-right: 20px;
     @media (min-width: 768px) {
-        margin: 20px;
+        margin: 10px;
+    }
+    :hover {
+        background-color: white;
+        color: #39BAE9;
     }
 `;
 

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const SmallHeading = styled.h3`
     font-size: 2rem;
@@ -8,6 +8,13 @@ const SmallHeading = styled.h3`
     @media (min-width: 768px) {
         font-size: 2.2rem;
     }
+
+    ${({ project }) => (
+        project && css`
+            color: #39BAE9;
+            align-self: flex-start;
+        `
+    )}
 `;
 
 export default SmallHeading;
